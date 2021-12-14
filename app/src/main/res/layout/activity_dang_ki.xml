@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangKiActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_dangki"
+        app:title="Thông tin tài khoản"
+        android:background="#65C7F3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_margin="5dp"
+        android:weightSum="10"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_dangki"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Họ tên:" />
+
+        <EditText
+            android:id="@+id/edtFullname_dangki"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Số điện thoại:" />
+
+        <EditText
+            android:id="@+id/edtPhone_dangki"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Địa chỉ:" />
+
+        <EditText
+            android:id="@+id/edtDiachi_dangki"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tên đăng nhập:" />
+
+        <EditText
+            android:id="@+id/edtUser_dangki"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mật khẩu:" />
+
+        <EditText
+            android:id="@+id/edtPass_dangki"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xác nhận mật khẩu:" />
+
+        <EditText
+            android:id="@+id/edtPassXacNhan_dangki"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_dangki"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Đăng kí" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
